@@ -1,0 +1,161 @@
+/* == TYPOGRAPHY == */
+
+@font-face {
+  font-family: 'League Spartan';
+  src: url('./fonts/LeagueSpartan.ttf') format('truetype');
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* == HERO == */
+
+#hero {
+  min-height: 100vh;
+  height: auto;
+  background: url('./images/bg-pattern-top-desktop.svg') top left no-repeat,
+    url('./images/bg-pattern-bottom-desktop.svg') bottom right no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 71px;
+}
+
+/* == HERO HEADER == */
+
+.hero-header {
+  display: flex;
+  flex-direction: row;
+  gap: 125px;
+  width: 1110px;
+}
+
+/* == HEADING== */
+
+.heading {
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.heading h1 {
+  font-size: 56px;
+  line-height: 48px;
+  letter-spacing: -2px;
+  font-weight: bold;
+  color: #512051;
+}
+
+.heading p {
+  font-size: 19px;
+  line-height: 25px;
+  letter-spacing: -0.63px;
+  color: #927B91;
+}
+
+/* == RATINGS== */
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32.5px;
+  padding: 20px 32px;
+  width: 445px;
+  height: 56px;
+  background-color: #F7F2F7;
+  border-radius: 8px;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.star {
+  width: 16.55px;
+}
+
+.rating p {
+  font-size: 17px;
+  font-weight: bold;
+  color: #512051;
+}
+
+/* == TESTIMONIALS */
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.testimonial {
+  width: 350px;
+  background-color: #512051;
+  padding: 40px 32px 35px 32px;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.testimonial-image {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.testimonial-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.verified-buyer {
+  font-size: 17px;
+  font-weight: 400;
+  color: #EE69A4;
+  margin-top: 4px;
+}
+
+.testimonial-comment {
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.3px;
+  font-weight: 400;
+  color: #FFFFFF;
+  margin-top: 32px;
+}
+
+/* == RESPONSIVE == */
+
+@media (max-width: 375px) {
+
+  /* == HERO == */
+
+  #hero {
+    background: url('./images/bg-pattern-top-mobile.svg') top left no-repeat,
+      url('./images/bg-pattern-bottom-mobile.svg') bottom right no-repeat;
+    gap: 39px;
+  }
+
+  /* == HERO HEADER == */
+
+  .hero-header {
+    flex-direction: column;
+    gap: 49px;
+    width: 327px;
+  }
+}
