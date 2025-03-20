@@ -148,7 +148,22 @@ body {
   #hero {
     background: url('./images/bg-pattern-top-mobile.svg') top left no-repeat,
       url('./images/bg-pattern-bottom-mobile.svg') bottom right no-repeat;
-    gap: 39px;
+    gap: 49px;
+    padding: 82px 24px 99px 24px;
+  }
+
+  /* == HERO HEADER == */
+
+  .heading {
+    width: 327px;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .heading h1 {
+    font-size: 40px;
+    line-height: 32px;
+    letter-spacing: -1.43px;
   }
 
   /* == HERO HEADER == */
@@ -157,5 +172,40 @@ body {
     flex-direction: column;
     gap: 49px;
     width: 327px;
+  }
+
+  /* == RATINGS== */
+
+  .rating {
+    width: 327px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 55px;
+    width: 327px;
+    height: 78px;
+  }
+
+  /* == TESTIMONIALS */
+
+  .testimonials {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .testimonial {
+    width: 327px;
+  }
+
+  .testimonial-name {
+    font-size: 17px;
+  }
+
+  .testimonial-comment {
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.3px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-top: 23px;
   }
 }
